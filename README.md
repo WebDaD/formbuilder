@@ -4,6 +4,8 @@
 * View submissions, aggregations, ...
 * Edit submission data (eg hidden fields)
 * Every Form field can be hidden, required, validated
+* Every Form field can be conditional to one or more other fields
+* Every Form field can be filled automaticelly from other fields
 * Supports all the form types (text, number, password, select, radiobuttons, ...)
 * and some special ones: signature, url, email
 * allow users to printout form.
@@ -57,6 +59,17 @@
 	* order
 	* required
 	* hidden
+* form_field_conditions
+	* id
+	* field_id
+	* conditional_field_id
+	* type
+	* parameter
+* form_field_defaults
+	* id
+	* field_id
+	* type
+	* value
 * form_field_languages
 	* form_field_id
 	* language_id
